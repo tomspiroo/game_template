@@ -1,6 +1,5 @@
 import pygame
-from pygame.sprite import _Group
-from src.settings import *
+from settings import *
 
 class Tile(pygame.sprite.Sprite):
     def __init__(self, pos, groups):

@@ -12,6 +12,8 @@ Attacking while moving was not permitted in the tutorial, will have to fix this 
 
 When attack button and a move button is pressed at the saeme time there seems to be a bug where the character doesnt take the 'no movement when attacking' policy properly. This might eventually get changed since the attacking while moving might not be a mechanism I want but at the minute when attacking while moving the animation for the weapon does not move with the character, leaving it in the place of spawn until it is destroyed.
 
+Currently (20/07/2024) the animate function in both the player and enemy are the same even though the bloke said theyre different? can put into Entity if they remain the same 
+
 # Final game ideas - Title: The Garden?:
 Gameplay:
 - NPCs are randomly encountered within stages  of the run and will occupy a place at the beginning of the level and will stay there in that save, 'unlocking' them and their assistance. 

@@ -14,6 +14,10 @@ When attack button and a move button is pressed at the saeme time there seems to
 
 Currently (20/07/2024) the animate function in both the player and enemy are the same even though the bloke said theyre different? can put into Entity if they remain the same 
 
+Attack cooldown in 'enemies.py' for each enemy is a global feature where all enemies share the attack cooldown, this is not what I want, thus the cooldown will be added to the enemy dictionary.
+
+Level and even enemy data might be easier to be implemented via CSV files rather than having dictionaries set up for their data. In the low enemy variety it has been good to use dictionaries to learn them but when having a higher amount of enemies i might need to import all the data from a CSV and probably put them into dictionaries like it is current being used to make the code translatable. As for the levels there is already CSV files used for the map, might be able to keep a rough implementation of that is already going on within the level, however there might need to be some change in the code so that the 'level.py' code is not restricted to the one level.
+
 # Final game ideas - Title: The Garden?:
 Gameplay:
 - NPCs are randomly encountered within stages  of the run and will occupy a place at the beginning of the level and will stay there in that save, 'unlocking' them and their assistance. 

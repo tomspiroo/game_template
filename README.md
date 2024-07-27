@@ -20,6 +20,15 @@ Level and even enemy data might be easier to be implemented via CSV files rather
 
 Enemies overlap, can take this out by adding more collision mechanics later on
 
+Can cast healing spell even if the health bar is maxed out, can change this to be different if wanted but it sounds kinda good to punsih stupid players
+
+Currenlty (27/07/2024) magic stat the player has enhances the speed of magic recovery and will be used for the damage of the flame spell but does not alter the healing amount, might change this 
+
+Energy recovery speed will need to be adjusted/scaled/altered depending on game balance 
+
+In 'magic.py' there is a double up in a line of code in the 'flame()' function, can put this outside of conditional if statement to make more streamline and to potentially check if the status of the player is successfully being read by the flame function
+
+
 # Final game ideas - Title: The Garden?:
 Gameplay:
 - NPCs are randomly encountered within stages  of the run and will occupy a place at the beginning of the level and will stay there in that save, 'unlocking' them and their assistance. 

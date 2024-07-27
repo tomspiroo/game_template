@@ -36,7 +36,7 @@ class AnimationPlayer:
                 self.reflect_images(import_folder('../graphics/particles/leaf3')),
                 self.reflect_images(import_folder('../graphics/particles/leaf4')),
                 self.reflect_images(import_folder('../graphics/particles/leaf5')),
-                self.reflect_images(import_folder('../graphics/particles/leaf6')),
+                self.reflect_images(import_folder('../graphics/particles/leaf6'))
                 )            
         }
 
@@ -46,11 +46,14 @@ class AnimationPlayer:
             flipped_frame = pygame.transform.flip(frame,True,False)
             new_frames.append(flipped_frame)
         return new_frames
-    
+
     def create_grass_particles(self,pos,groups):
         animation_frames = choice(self.frames['leaf'])
         ParticleEffect(pos,animation_frames,groups)
 
+    def create_particles(self,animation_type,pos,groups):
+        animation_frames = self.frames[f'{animation_type}']
+        ParticleEffect(pos,animation_frames,groups)
 
 class ParticleEffect(pygame.sprite.Sprite):
     def __init__(self,pos,animation_frames,groups):

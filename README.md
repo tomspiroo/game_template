@@ -28,6 +28,7 @@ Energy recovery speed will need to be adjusted/scaled/altered depending on game 
 
 In 'magic.py' there is a double up in a line of code in the 'flame()' function, can put this outside of conditional if statement to make more streamline and to potentially check if the status of the player is successfully being read by the flame function
 
+In 'particles.py' when calling the particle effects, currently within the __init__ function there is an initilisation of the sprite_type as a borad 'magic', when including more attacking spells this will need to be changed to suit the multitude of attacking spells by adding another parameter to the init function, this will set the sprite_type for the different spells 
 
 # Final game ideas - Title: The Garden?:
 Gameplay:

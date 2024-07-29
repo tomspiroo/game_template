@@ -30,6 +30,14 @@ In 'magic.py' there is a double up in a line of code in the 'flame()' function, 
 
 In 'particles.py' when calling the particle effects, currently within the __init__ function there is an initilisation of the sprite_type as a borad 'magic', when including more attacking spells this will need to be changed to suit the multitude of attacking spells by adding another parameter to the init function, this will set the sprite_type for the different spells 
 
+Currently upgrade menu is toggled when the 'm' key is pressed, probably change this later on 
+
+Currently nothing happens on player death, this will need to be introduced
+
+Currently when upgrading the stats of the player, the health and energy bar so not increase in size when the specific stats are increased, only the percentage of the health bar changes. This could be changed to an increasing health bar that grows with the stat or by adding numbers displaying the health out of the total health pool, like: 123/150 which goes up and down depending on healing and damage 
+
+In upgrade menu, when the stat is maxed it still says there is a 'cost' for the stat to be upgraded again, when the stat reaches the max change the text at the bottom to say "Max" or something similar
+
 # Final game ideas - Title: The Garden?:
 Gameplay:
 - NPCs are randomly encountered within stages  of the run and will occupy a place at the beginning of the level and will stay there in that save, 'unlocking' them and their assistance. 

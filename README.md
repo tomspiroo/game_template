@@ -38,6 +38,12 @@ Currently when upgrading the stats of the player, the health and energy bar so n
 
 In upgrade menu, when the stat is maxed it still says there is a 'cost' for the stat to be upgraded again, when the stat reaches the max change the text at the bottom to say "Max" or something similar
 
+When adding more levels to the game, make sure to change the main file line 30 so that the fill is of the specific level
+
+For the sounds, will need to once again change the pathing for the sounds when the file system is adjusted to put all the assets into a single folder. Also the sounds for the magic can be taken out of the init method and added to the dictionary in the settings so it can be called upon more easily
+
+In the menu main menu you should be able to let the user alter the sounds by looking up whereever there is some sort of sound implementation, they might need to be categorised so the user can adjust based on: main volume, music, backgound sounds, speech, etc
+
 # Final game ideas - Title: The Garden?:
 Gameplay:
 - NPCs are randomly encountered within stages  of the run and will occupy a place at the beginning of the level and will stay there in that save, 'unlocking' them and their assistance. 
